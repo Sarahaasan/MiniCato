@@ -17,7 +17,7 @@ const cairo = Cairo({
 });
 
 // logo 
-const LOGO_SRC = "/locales/images/loogo.png";
+const LOGO_SRC = "/locales/loogo.png";
 
 // Edit the hrefs to match your routes
 const NAV_LINKS = [

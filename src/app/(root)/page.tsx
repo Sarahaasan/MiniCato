@@ -107,7 +107,7 @@ const cairo = Cairo({
   weight: ["400", "600", "700", "900"],
 });
 
-const LOGO_SRC = "/locales/images/loogo.png";
+const LOGO_SRC = "/locales/loogo.png";
 
  const handleProtectedClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!localStorage.getItem("token")) {
