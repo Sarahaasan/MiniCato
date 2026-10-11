@@ -39,10 +39,12 @@ const Navbar = () => {
   //   return false;
   // });
 
-  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+useEffect(() => {
   // eslint-disable-next-line react-hooks/set-state-in-effect
-  return !!localStorage.getItem("token");
-});
+  setIsLoggedIn(!!localStorage.getItem("token"));
+}, []);
 
   // slightly reduce opacity on scroll
   useEffect(() => {
